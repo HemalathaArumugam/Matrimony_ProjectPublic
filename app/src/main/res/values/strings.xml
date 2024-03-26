@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Matrimony_Project</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="pending_profile">4 Pending Profiles</string>
+    <string name="matches">My Matches</string>
+</resources>

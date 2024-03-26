@@ -1,0 +1,64 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    <variable
+        name ="binding1"
+        type="com.example.matrimony_project.livedata.ProfileLiveData"/>
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B4D8"
+    >
+
+    <TextView
+        android:id="@+id/tvmatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matches"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pending_profile"
+        app:layout_constraintStart_toStartOf="@id/tvmatch"
+        app:layout_constraintTop_toTopOf="@id/tvmatch"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gesturebtn"
+        android:text="Gesture"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvProfile"
+        app:layout_constraintStart_toStartOf="@+id/tvProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
